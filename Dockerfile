@@ -99,3 +99,5 @@ COPY source /root/fbthrift-example
 
 RUN cd /root/fbthrift-example && \
   thrift1 -v --gen py:asyncio,new_style mytest.thrift
+
+CMD python3 /root/fbthrift-example/server.py
