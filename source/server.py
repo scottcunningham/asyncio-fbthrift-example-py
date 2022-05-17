@@ -47,7 +47,7 @@ if __name__ == "__main__":
         ThriftAsyncServerFactory(
             handler,
             loop=loop,
-            port=29292,
+            port=1337,
             ssl=context,
             event_handler=TestTServerEventHandler(),
         )
